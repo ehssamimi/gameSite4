@@ -180,7 +180,7 @@ h1{
   }
 
 .custom-bg-light {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0,1) !important;
 }
 
 .custom-navbar .nav-link {
@@ -200,6 +200,37 @@ h1{
 .custom-navbar {
     margin: 10px auto;
 }
+
+
+.Font-Family-pb{
+    font-family: pb !important;
+}
+.Font-Family-font1{
+    font-family: font1 !important;
+}
+.FS1{
+    font-size: calc(0.5rem+ 0.5vw)!important;
+}
+.FS2{
+    font-size: calc(0.5rem + 0.5vw)!important;
+}
+.FS3{
+    font-size: calc(0.7rem + 0.7vw)!important;
+}
+.FS4{
+    font-size: calc(0.7rem + 1vw)!important;
+}
+.FS5{
+    font-size: calc(1rem + 1vw)!important;
+}
+
+.vertical-align-middle{
+    vertical-align: middle;
+}
+.vertical-align-bottom{
+    vertical-align: bottom;
+}
+
 
 #page5 .text-img {
     position: relative;
@@ -363,10 +394,25 @@ h1{
 .headerLine{
     position: absolute;
     left: 2%;
-    top: 100%;
+    top: 87%;
+}
+
+.navlink-Color{
+    font-size: RGB(255,255,255,0.85);
+}
+.navbar-brand > span{
+    font-size: calc(0.7rem + 1vw)!important;
+    font-family: font1 !important;
+    vertical-align: bottom;
+    color: #fb772a;
 }
 
 @media (max-width: 576px) {
+
+    .navbar-brand > span{
+        vertical-align: top;
+    }
+
     .button-style{
         font-size: 2.5vw!important;
          margin-top: 4% !important;
@@ -865,7 +911,8 @@ input[type=range]:focus::-ms-fill-upper {
 
 .active-scroll-header {
     /*text-decoration: underline;*/
-    font-weight: bolder !important;
+    font-weight: 900 !important;
+    color: #ffffff!important;
 }
 a.anchor {
     /*display: block;*/
@@ -1187,10 +1234,7 @@ a.anchor {
     /*background: white;*/
     /*box-sizing: border-box;*/
 }
-/*.row{*/
-    /*display: grid;*/
-    /*grid-template-columns: auto auto auto auto auto auto auto auto auto;*/
-/*}*/
+
 
 .header{
     height: 50em;
@@ -1203,11 +1247,6 @@ a.anchor {
     right: 4%;
     top: 82%;
 
-    /*position: absolute;*/
-    /*width: 40%;*/
-    /*!*bottom: 10%;*!*/
-    /*top: 52%;*/
-    /*right: -35%;*/
 }
 .mb-5vw{
     margin-bottom: 5vw;

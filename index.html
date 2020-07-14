@@ -102,33 +102,34 @@
     <nav class="navbar navbar-expand-md navbar-dark custom-bg-light fixed-top"
     id="navigationTop">
     <a class="navbar-brand" href="#">
-        <img src="assets/images/bar.png" width="40" height="40" class="d-inline-block align-top" alt="bar.png" id="headerBar">
+        <img src="assets/images/bar.png" width="60" height="60" class="d-inline-block align-top" alt="bar.png" id="headerBar">
+        <span class="FS4 Font-Family-font1 vertical-align-bottom">TICKET TO HEAVEN</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav custom-navbar position-relative">
+        <ul class="navbar-nav   position-relative">
             <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link  anchor " onclick="changeBarNumber('01')"
+                <a data-easing="linear" class="nav-link  anchor navlink-Color  active-scroll-header" id="page1Header" onclick="changeBarNumber('01')"
                    href="#page1">HOME</a>
             </li>
             <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar" >
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('02')" href="#page2">INTRODUCTION</a>
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('02')" id="page2Header" href="#page2">INTRODUCTION</a>
             </li>
             <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('03')" href="#page3">HEROES</a>
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('03')" id="page3Header" href="#page3">HEROES</a>
             </li>
             <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('04')" href="#page4">MAPS AND
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('04')" id="page4Header" href="#page4">MAPS AND
                     TRAPS</a>
             </li>
             <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('05')" id="joinus" href="#Jooooin">JOIN
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('05')" id="joinus" href="#Jooooin">JOIN
                     US!</a>
             </li>
             <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor"   id="contact-us-li" href="contact-us.html">Contact US</a>
+                <a data-easing="linear" class="nav-link anchor navlink-Color"   id="contact-us-li" href="contact-us.html">Contact US</a>
             </li>
             <img src="assets/images/Rectangle 15.svg" alt="headerLine" id="headerLine" class="headerLine "/>
 
@@ -495,7 +496,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbarFooter">
-            <ul class="navbar-nav custom-navbar">
+            <ul class="navbar-nav  ">
                 <li class="nav-item">
                     <a data-easing="linear" class="nav-link" onclick="changeBarNumber('01')" href="#page1">HOME</a>
                 </li>
@@ -619,29 +620,7 @@
 </div>
 <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js" ><\/script>')</script>
 <script>
-    $(document).ready(function () {
-        $('.submitModal').on('click', function (e) {
 
-            var mail = $('#mce-EMAIL').val();
-            var name = $('#mce-FNAME').val();
-            let validate=true
-            if (mail == '' || mail == null) {
-                swal("Oops", "Email can not be empty", "error");
-                e.preventDefault();
-                validate=false
-                return false;
-            }
-            if (name == '' || name == null) {
-                swal("Oops", "Name can not be empty", "error");
-                e.preventDefault();
-                validate=false
-                return false;
-            }
-            if ( validate){
-                $('#mc-embedded-subscribe-form').submit();
-            }
-        });
-    });
 </script>
 
 <script src="assets/js/jquery.paroller.min.js"></script>
