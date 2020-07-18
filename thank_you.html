@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,156 +9,181 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/sweetalert.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
+    <!--<meta http-equiv="refresh" content="0; url=https://thehandmade.io/" />-->
+    <!--<link rel="stylesheet" href="assets/js/jquery.scrollbar.css">-->
+    <!--<link rel="stylesheet" href="assets/js/gimmy/gemini-scrollbar.css">-->
     <link rel="icon"
           type="image/png"
           href="fav.jpeg">
-    <title>Ticket To Heaven</title>
+    <title>Ticket To Heaven-contactUs</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151443245-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151443245-1');
+    </script>
+
 </head>
 <body>
-<div  class="w-100 ">
+<!-- PRELOADER -->
+<!--<div id="preloader">-->
+    <!--<div class="loading-area">-->
+        <!--<div class="logo"><img src="assets/images/bar.png" alt=""></div>-->
+        <!--<span>loading...</span>-->
+    <!--</div>-->
+    <!--<div class="left-side"></div>-->
+    <!--<div class="right-side"></div>-->
+<!--</div>-->
 
-    <nav class="navbar navbar-expand-md navbar-dark custom-bg-light fixed-top"
-         id="navigationTop">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/bar.png" width="40" height="40" class="d-inline-block align-top" alt="bar.png" id="headerBar">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav custom-navbar position-relative">
-                <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar">
-                    <a data-easing="linear" class="nav-link  anchor " onclick="changeBarNumber('01')"
-                       href="#page1">HOME</a>
-                </li>
-                <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar" >
-                    <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('02')" href="#page2">INTRODUCTION</a>
-                </li>
-                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('03')" href="#page3">HEROES</a>
-                </li>
-                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('04')" href="#page4">MAPS AND
-                        TRAPS</a>
-                </li>
-                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('05')" id="joinus" href="#Jooooin">JOIN
-                        US!</a>
-                </li>
-                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <a data-easing="linear" class="nav-link anchor"   id="contact-us-li" href="contact-us.html">Contact US</a>
-                </li>
-                <img src="assets/images/Rectangle 15.svg" alt="headerLine" id="headerLine" class="headerLine "/>
 
-            </ul>
+<nav class="navbar navbar-expand-md navbar-dark custom-bg-light fixed-top"
+     id="navigationTop">
+    <a class="navbar-brand" href="#">
+        <img src="assets/images/bar.png" width="60" height="60" class="d-inline-block align-top" alt="bar.png" id="headerBar">
+        <span class="FS4 Font-Family-font1 vertical-align-bottom">TICKET TO HEAVEN</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav   position-relative">
+            <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link  anchor navlink-Color  " id="page1Header" onclick="changeBarNumber('01')"
+                   href="#page1">HOME</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar" >
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('02')" id="page2Header" href="#page2">INTRODUCTION</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('03')" id="page3Header" href="#page3">HEROES</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('04')" id="page4Header" href="#page4">MAPS AND
+                    TRAPS</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('05')" id="joinus" href="#Jooooin">JOIN
+                    US!</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color active-scroll-header"   id="contact-us-li" href="contact-us.html">Contact US</a>
+            </li>
+            <img src="assets/images/Rectangle 15.svg" alt="headerLine" id="headerLine" class="headerLine "/>
+
+        </ul>
+    </div>
+    <div class=" socialsHeaders   d-none d-sm-block ">
+        <div class="d-flex w-100 h-100">
+            <div class="d-flex h-100">
+                <div class="mr-2 ml-2 h-100 d-flex align-items-center" style="width: 58% ">
+                    <a href="https://twitter.com/handmadellc" target="_blank" class="t">
+                        <img src="assets/images/page3/Icon%20awesome-twitter.png" alt="tw" style="width: 80% ">
+                    </a>
+
+                </div>
+                <div class="mr-2 h-100 d-flex align-items-center" style="width: 38% ">
+                    <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank"  >
+                        <img src="assets/images/page3/Icon%20awesome-facebook-f.png" alt="fb" style="width: 80% " >
+                    </a>
+                </div>
+
+            </div>
+            <div class="h-100  pl-5 pr-5 bg-kickstarter    Font-Family-font1 FS3 d-flex align-items-center text-white  " >
+                KickStarter
+            </div>
         </div>
-    </nav>
+
+    </div>
+</nav>
 
 <div class="w-100   d-flex flex-column">
 
     <section class="container-fluid " id="thanks">
         <div class="row position-relative">
-            <div class="col-md-12 p-0 h-75 text-white"  >
-                <!--<img src="assets/images/thank_bg.png " class="group2" alt="group2.png">-->
+            <div class="col-md-12 p-0  text-white"  >
+                <div class="position-form-contactUS w-100">
+                    <div class="w-100" >
+                        <form  class=" form-contact-us " id="contact-us">
 
-                <div class="col-5 col-md-3 position-absolute d-flex flex-column text-box-fb ">
-                    <h1 class="fs35vw ml-3">Thank You</h1>
+                            <div class="w-100 d-flex justify-content-between">
+                                <input type="text" id="name" class="fs15vw input-contact pl-3"    name="name"
+                                       placeholder="NAME">
+                                <input type="text" id="email" class="fs15vw  input-contact pl-3" name="MERGE1"
+                                       placeholder="EMAIL">
 
-                    <img src="assets/images/dollor.png" class="w-100" alt="dollor.png">
-                    <p class="fs13vw">Be the first one to find out about Early Bird offers, all you have to do is:</p>
-                    <div class="   ">
-                        <a href="https://www.facebook.com/groups/TTH.VIP" target="_blank">
-                            <div class="  position-relative fb-thank-btn">
-                                <img src="assets/images/fb-box-vpn%20(1).png" class="   " alt="btn-facebook.png">
-                                <!--<img src="assets/images/path323.png" class="path" alt="path323.png">-->
-                                <a href="https://www.facebook.com/groups/VIP.TicketToHeaven/" class="fbth text-white " target="_blank"> Join Vip FaceBook Group!</a>
-                                <!--<p class="fbth">Join Vip FaceBook Group! </p>-->
                             </div>
-                        </a>
-                        <div>
-                            <a href="https://chat.whatsapp.com/Eho7K8tfkFHIUVxyv2Ks1C" target="_blank" class="watsapp">
-                            <img src="assets/images/wats-app%20(1).png" class="  h-100 " alt="btn-facebook.png">
-                            </a>
-
-                        </div>
-                        <div>
-                            <a href="https://www.facebook.com/groups/TTH.VIP" target="_blank" class="telegram">
-                            <img src="assets/images/telegram.png" class="  h-100 " alt="btn-facebook.png">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.facebook.com/groups/TTH.VIP" target="_blank" class="socialmediat">
-                            <img src="assets/images/3socialmedia.png" class="  h-100 " alt="btn-facebook.png">
-                            </a>
-                        </div>
 
 
+                            <div class="w-100">
+                                    <!--<textarea id="w3review" name="w3review" rows="15"  class="w-100 mt-5" placeholder="Describe yourself here..."></textarea>-->
+                                <textarea rows="10" class="w-100 mt-5 p-3" id="text" placeholder="COMMENT" id="comments"></textarea>
+
+                            </div>
 
 
+                            <div class="col-4 offset-4 yes-btn SubmitContactUs "   >
+                                <img src="assets/images/page1-btn.png" class="path2" alt="path323.png">
+                                <p class="button-style cursor-pointer">submit </p>
+                                <div class="loading"></div>
+                            </div>
+                        </form>
                     </div>
-
-
-
-
-                    <!--<img src="assets/images/btn-facebook.png" class="w-100" alt="btn-facebook.png">-->
                 </div>
-                <img src="assets/images/thank_bg.png" class="w-100" alt="page1.png">
+
+
+
+
+
+                <img src="assets/images/page3/page2_new_back@2x.png" class="w-100  h-100vh" alt="page1.png">
             </div>
         </div>
     </section>
+<!--    <section class="container-fluid p-0 mt-auto  " id="footer">-->
+<!--        &lt;!&ndash; Navbar &ndash;&gt;-->
+<!--        <nav class="navbar navbar-expand-md navbar-dark">-->
 
+<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarFooter">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="collapsibleNavbarFooter">-->
+<!--                <ul class="navbar-nav custom-navbar">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('01')" href="index.html#page1">HOME</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('02')"-->
+<!--                           href="index.html#page2">INTRODUCTION</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('03')" href="index.html#page3">CHOOSE YOUR-->
+<!--                            HEROS</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('04')" href="index.html#page4">MAPS AND-->
+<!--                            TRAPS</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('05')" href="index.html#page5">CONTACT-->
+<!--                            US</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </nav>-->
 
-    <section class="container-fluid p-0 mt-auto  " id="footer">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarFooter">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbarFooter">
-                <ul class="navbar-nav custom-navbar">
-                    <li class="nav-item">
-                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('01')" href="index.html#page1">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('02')"
-                           href="index.html#page2">INTRODUCTION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('03')" href="index.html#page3">CHOOSE YOUR
-                            HEROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('04')" href="index.html#page4">MAPS AND
-                            TRAPS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('05')" href="index.html#page5">CONTACT
-                            US</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <p class="text-center text-white">
-            @2020 HANDMADE INTERACTIVE LLC. ALL RIGHT RESERVED.
-            <br>
-            All trademarks referenced herein the properties of their respective
-            <br>
-            owners.
-            <br>
-            CA Residents only: Do not sell my personal information.
-        </p>
-        <!-- Navbar -->
-    </section>
-
-
-</div>
-
-
-
-
-
+<!--        <p class="text-center text-white">-->
+<!--            @2020 HANDMADE INTERACTIVE LLC. ALL RIGHT RESERVED.-->
+<!--            <br>-->
+<!--            All trademarks referenced herein the properties of their respective-->
+<!--            <br>-->
+<!--            owners.-->
+<!--            <br>-->
+<!--            CA Residents only: Do not sell my personal information.-->
+<!--        </p>-->
+<!--        &lt;!&ndash; Navbar &ndash;&gt;-->
+<!--    </section>-->
 
 
 
@@ -166,12 +191,6 @@
 
 
 </div>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/smooth-scroll.polyfills.min.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/sweetalert.min.js"></script>
-<script src="assets/js/main.js"></script>
 <script>
     $(document).ready(function() {
         !function(f,b,e,v,n,t,s)
@@ -211,15 +230,75 @@
     fbq('track', 'CompleteRegistration');
 </script>
 
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/sweetalert.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    // *********send contact-us********
+    $(document).ready(function ( ) {
+        function validateEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+        function validate() {
+            let condition=true;
+            $("#name").val()===""?$("#name").addClass("b-red"):$("#name").removeClass("b-red");
+            $("#email").val()===""?$("#email").addClass("b-red"):$("#email").removeClass("b-red");
+            $("#text").val()===""?$("#text").addClass("b-red"):$("#text").removeClass("b-red");
+            if ($("#name").val()==="" || $("#email").val()==="" || $("#text").val()===""){
+                condition=false;
+            }else if (!validateEmail($("#email").val())) {
+                condition=false;
+            }
+            return condition;
+        }
 
 
+        $(".SubmitContactUs").click(function ( ) {
+            let condition = validate();
+            console.log("condition "+ condition)
+            if (condition) {
+               let  data={
+                    Email:$("#email").val(),
+                    Name:$("#name").val(),
+                    Text:$("#text").val()
+                }
+                console.log(JSON.stringify(data))
 
 
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "http://chichiapp.ir:30032/ticket-to-heaven/contact-us",
+                    "method": "POST",
+                    "headers": {
+                        "cache-control": "no-cache",
+                        "Postman-Token": "009ddf07-6a2e-4245-adec-dae55bc7ee2f"
+                    },
+                    "data": JSON.stringify(data)
+                };
 
+                $.ajax(settings).done(function (response) {
+                    console.log(response);
+                    swal("Successful", "Your massage send", "success");
+                });
 
+            }else {
+                if (!validateEmail($("#email").val())) {
+                    swal("Oops", "your email must be valid ", "error");
+                }else {
+                    swal("Oops", "All field must be full ", "error");
+                }
 
+                console.log("callback")
+            }
+        })
 
+    });
 
+</script>
 
 </body>
 </html>

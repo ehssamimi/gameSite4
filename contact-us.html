@@ -1,244 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ticket To Heaven</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<meta http-equiv="refresh" content="0;URL=http://thehandmade.io"/>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="fav.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/sweetalert.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
-    <!--<meta http-equiv="refresh" content="0; url=https://thehandmade.io/" />-->
-    <!--<link rel="stylesheet" href="assets/js/jquery.scrollbar.css">-->
-    <!--<link rel="stylesheet" href="assets/js/gimmy/gemini-scrollbar.css">-->
-    <link rel="icon"
-          type="image/png"
-          href="fav.jpeg">
-    <title>Ticket To Heaven-contactUs</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151443245-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'UA-151443245-1');
-    </script>
-
+<!--    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">-->
+<!--    این باعث میشد که دیر لود بشه-->
 </head>
-<body>
-<!-- PRELOADER -->
-<!--<div id="preloader">-->
-    <!--<div class="loading-area">-->
-        <!--<div class="logo"><img src="assets/images/bar.png" alt=""></div>-->
-        <!--<span>loading...</span>-->
-    <!--</div>-->
-    <!--<div class="left-side"></div>-->
-    <!--<div class="right-side"></div>-->
-<!--</div>-->
+<body class="m-0">
+<div class=" container-detail bg-container position-relative" name ="#Top">
+    <nav class="navbar navbar-expand-md navbar-dark custom-bg-light fixed-top"
+         id="navigationTop">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/bar.png" width="60" height="60" class="d-inline-block align-top" alt="bar.png" id="headerBar">
+            <span class="FS4 Font-Family-font1 vertical-align-bottom">TICKET TO HEAVEN</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav   position-relative">
+                <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar">
+                    <a data-easing="linear" class="nav-link  anchor navlink-Color  " id="page1Header" onclick="changeBarNumber('01')"
+                       href="#page1">HOME</a>
+                </li>
+                <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar" >
+                    <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('02')" id="page2Header" href="#page2">INTRODUCTION</a>
+                </li>
+                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('03')" id="page3Header" href="#page3">HEROES</a>
+                </li>
+                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('04')" id="page4Header" href="#page4">MAPS AND
+                        TRAPS</a>
+                </li>
+                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('05')" id="joinus" href="#Jooooin">JOIN
+                        US!</a>
+                </li>
+                <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <a data-easing="linear" class="nav-link anchor navlink-Color active-scroll-header"   id="contact-us-li" href="contact-us.html">Contact US</a>
+                </li>
+                <img src="assets/images/Rectangle 15.svg" alt="headerLine" id="headerLine" class="headerLine "/>
 
-
-<nav class="navbar navbar-expand-md navbar-dark custom-bg-light fixed-top"
-     id="navigationTop">
-    <a class="navbar-brand" href="#">
-        <img src="assets/images/bar.png" width="40" height="40" class="d-inline-block align-top" alt="bar.png" id="headerBar">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav custom-navbar position-relative">
-            <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link  anchor " onclick="changeBarNumber('01')"
-                   href="#page1">HOME</a>
-            </li>
-            <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar" >
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('02')" href="index.html#page2">INTRODUCTION</a>
-            </li>
-            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('03')" href="index.html#page3">HEROES</a>
-            </li>
-            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('04')" href="index.html#page4">MAPS AND
-                    TRAPS</a>
-            </li>
-            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor" onclick="changeBarNumber('05')" id="joinus" href="index.html#Jooooin">JOIN
-                    US!</a>
-            </li>
-            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <a data-easing="linear" class="nav-link anchor"   id="contact-us-li" href="contact-us.html">Contact US</a>
-            </li>
-            <img src="assets/images/Rectangle 15.svg" alt="headerLine" id="headerLine" class="headerLine "/>
-
-        </ul>
-    </div>
-</nav>
-
-<div class="w-100   d-flex flex-column">
-
-    <section class="container-fluid " id="thanks">
-        <div class="row position-relative">
-            <div class="col-md-12 p-0  text-white"  >
-                <div class="position-form-contactUS w-100">
-                    <div class="w-100" >
-                        <form  class=" form-contact-us " id="contact-us">
-
-                            <div class="w-100 d-flex justify-content-between">
-                                <input type="text" id="name" class="fs15vw input-contact pl-3"    name="name"
-                                       placeholder="NAME">
-                                <input type="text" id="email" class="fs15vw  input-contact pl-3" name="MERGE1"
-                                       placeholder="EMAIL">
-
-                            </div>
-
-
-                            <div class="w-100">
-                                    <!--<textarea id="w3review" name="w3review" rows="15"  class="w-100 mt-5" placeholder="Describe yourself here..."></textarea>-->
-                                <textarea rows="10" class="w-100 mt-5 p-3" id="text" placeholder="COMMENT" id="comments"></textarea>
-
-                            </div>
-
-
-                            <div class="col-4 offset-4 yes-btn SubmitContactUs "   >
-                                <img src="assets/images/page1-btn.png" class="path2" alt="path323.png">
-                                <p class="button-style cursor-pointer">submit </p>
-                                <div class="loading"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-
-
-
-                <img src="assets/images/page3/page2_new_back@2x.png" class="w-100  h-100vh" alt="page1.png">
-            </div>
+            </ul>
         </div>
-    </section>
-<!--    <section class="container-fluid p-0 mt-auto  " id="footer">-->
-<!--        &lt;!&ndash; Navbar &ndash;&gt;-->
-<!--        <nav class="navbar navbar-expand-md navbar-dark">-->
+        <div class=" socialsHeaders   d-none d-sm-block ">
+            <div class="d-flex w-100 h-100">
+                <div class="d-flex h-100">
+                    <div class="mr-2 ml-2 h-100 d-flex align-items-center" style="width: 58% ">
+                        <a href="https://twitter.com/handmadellc" target="_blank" class="t">
+                            <img src="assets/images/page3/Icon%20awesome-twitter.png" alt="tw" style="width: 80% ">
+                        </a>
 
-<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarFooter">-->
-<!--                <span class="navbar-toggler-icon"></span>-->
-<!--            </button>-->
-<!--            <div class="collapse navbar-collapse" id="collapsibleNavbarFooter">-->
-<!--                <ul class="navbar-nav custom-navbar">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('01')" href="index.html#page1">HOME</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('02')"-->
-<!--                           href="index.html#page2">INTRODUCTION</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('03')" href="index.html#page3">CHOOSE YOUR-->
-<!--                            HEROS</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('04')" href="index.html#page4">MAPS AND-->
-<!--                            TRAPS</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a data-easing="linear" class="nav-link" onclick="changeBarNumber('05')" href="index.html#page5">CONTACT-->
-<!--                            US</a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </nav>-->
+                    </div>
+                    <div class="mr-2 h-100 d-flex align-items-center" style="width: 38% ">
+                        <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank"  >
+                            <img src="assets/images/page3/Icon%20awesome-facebook-f.png" alt="fb" style="width: 80% " >
+                        </a>
+                    </div>
 
-<!--        <p class="text-center text-white">-->
-<!--            @2020 HANDMADE INTERACTIVE LLC. ALL RIGHT RESERVED.-->
-<!--            <br>-->
-<!--            All trademarks referenced herein the properties of their respective-->
-<!--            <br>-->
-<!--            owners.-->
-<!--            <br>-->
-<!--            CA Residents only: Do not sell my personal information.-->
-<!--        </p>-->
-<!--        &lt;!&ndash; Navbar &ndash;&gt;-->
-<!--    </section>-->
+                </div>
+                <div class="h-100  pl-5 pr-5 bg-kickstarter    Font-Family-font1 FS3 d-flex align-items-center text-white  " >
+                    KickStarter
+                </div>
+            </div>
 
+        </div>
+    </nav>
 
+    <!--    *************************  box 1 **************************-->
+    <div class="position-absolute z-index-3 box1  " id="box1"></div>
+    <!--    *************************  box 1 **************************-->
 
+<!--    <div class="w-100   text-center h-t1  z-index-3 " >-->
+        <p class="text-white     h-t1 mb-0  " id="h-p1">Congratulations!</p>
+        <p class="text-white      " id="h-p2">You are now on of us!</p>
+<!--    </div>-->
 
+    <div class="w-60 h-t2 text-center position-absolute z-index-1 d-flex flex-column justify-content-center  text-2-top pb"
+         id="p2">
+        <div class="text-2 ">
+            <p class="text-white fs-tx2 mt-1 mb-0">Be the first one to find out about Early Bird</p>
+            <p class="text-white fs-tx2 mb-0">offers, all you have to do is:</p>
 
+        </div>
+    </div>
+    <div class="w-25 h-facebook text-center position-absolute z-index-1 d-flex flex-column justify-content-center  facebook-left  " id="facebook" >
+            <div class="size-social" id="facebook-size">
+                <i class="fab fa-facebook-f facebook-font"></i>
+            </div>
+    </div>
+
+    <div class="place-money  position-absolute z-index-4" id="money">
+        <img src="assets/images/Group 316.png" class="size-money" alt="money">
+    </div>
+
+    <!--    *************************  box 2 **************************-->
+    <div class="position-absolute z-index-3 box2" id="box2"></div>
+    <!--    *************************  box 2 **************************-->
 
 </div>
 
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/sweetalert.min.js"></script>
-<script src="assets/js/main.js"></script>
 
+<!-- Footer -->
+<section class="container-fluid   c-footer  " id="footer">
+    <!-- Navbar -->
+    <div class="col-12 mt-2">
+        <div class="col-6 fs-social float-left">
+            <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank" class="y">
+                <i class="fab fa-facebook-square c-facebook"></i>
+            </a>
+
+            <a href="https://twitter.com/handmadellc" target="_blank" class="w-100 ">
+                <i class="fab fa-twitter c-twitter"> </i>
+            </a>
+
+            <a href="https://www.linkedin.com/company/handmadeinteractive" target="_blank" class="l">
+                <i class="fab fa-linkedin c-linkedin "></i>
+            </a>
+
+            <a href="https://www.instagram.com/thehandmade.io/" target="_blank" class="i">
+                <i class="fab fa-instagram c-instagram"></i>
+            </a>
+            <a href="https://www.instagram.com/thehandmade.io/" target="_blank" class="i">
+                <i class="fab fa-youtube c-youtube"></i>
+            </a>
+
+        </div>
+        <div class="col-6 float-left text-right">
+            <a data-easing="linear" href="#Top"><i class="far fa-arrow-alt-circle-up c-Top fs-Top "></i></a>
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        <nav class="col-12 navbar navbar-expand-md navbar-dark mt-footer1">
+
+            <!--        <div class="navbar-collapse" id="collapsibleNavbarFooter">-->
+            <div class=" " id="collapsibleNavbarFooter">
+                <ul class="navbar-nav">
+                    <li class=" border-footer ">
+                        <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('01')" href="index.html#page1">HOME</a>
+                    </li>
+                    <li class=" border-footer">
+                        <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('02')" href="index.html#page2">INTRODUCTION</a>
+                    </li>
+                    <li class=" border-footer">
+                        <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('03')" href="index.html#page3">CHOOSE YOUR HEROS</a>
+                    </li>
+                    <li class=" border-footer">
+                        <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('04')" href="index.html#page4">MAPS AND TRAPS</a>
+                    </li>
+                    <li class=" ">
+                        <a data-easing="linear" class=" link fs-footer-nav pi" onclick="changeBarNumber('05')" href="index.html#page5">CONTACT US</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="col-12 mt-footer2">
+            <hr  style="background-color: #434343" />
+        </div>
+        <div class="col-12 mt-footer3 ">
+
+            <p class="m-0 fs-footer-detail">©2020 HANDMADE INTERACTIVE LLC. ALL RIGHTS RESERVED.</p>
+            <P class="m-0 fs-footer-detail">All trademarks referenced herein are the properties of their respective owners.</P>
+            <P class="m-0 fs-footer-detail">CA Residents only: Do not sell my personal information</P>
+
+        </div>
+        <div class="col-12 mt-2">
+            <div class="col-6 fs-social float-left mt-footer4 p-0">
+                <p class="col-6 m-0 fs-footer-detail float-left p-0">Terms of Service</p>
+
+                <p class="col-6 m-0 fs-footer-detail float-left p-0">Privacy Policy</p>
+            </div>
+            <div class="col-6 float-left text-right ">
+                <img src="assets/images/Pcgame.png" class="size-pcgame" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+</section>
+
+</body>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js" ><\/script>')</script>
 <script>
-    // *********send contact-us********
-    $(document).ready(function ( ) {
-        function validateEmail(email) {
-            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(String(email).toLowerCase());
-        }
-        function validate() {
-            let condition=true;
-            $("#name").val()===""?$("#name").addClass("b-red"):$("#name").removeClass("b-red");
-            $("#email").val()===""?$("#email").addClass("b-red"):$("#email").removeClass("b-red");
-            $("#text").val()===""?$("#text").addClass("b-red"):$("#text").removeClass("b-red");
-            if ($("#name").val()==="" || $("#email").val()==="" || $("#text").val()===""){
-                condition=false;
-            }else if (!validateEmail($("#email").val())) {
-                condition=false;
-            }
-            return condition;
-        }
-
-
-        $(".SubmitContactUs").click(function ( ) {
-            let condition = validate();
-            console.log("condition "+ condition)
-            if (condition) {
-               let  data={
-                    Email:$("#email").val(),
-                    Name:$("#name").val(),
-                    Text:$("#text").val()
-                }
-                console.log(JSON.stringify(data))
-
-
-                var settings = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "http://chichiapp.ir:30032/ticket-to-heaven/contact-us",
-                    "method": "POST",
-                    "headers": {
-                        "cache-control": "no-cache",
-                        "Postman-Token": "009ddf07-6a2e-4245-adec-dae55bc7ee2f"
-                    },
-                    "data": JSON.stringify(data)
-                };
-
-                $.ajax(settings).done(function (response) {
-                    console.log(response);
-                    swal("Successful", "Your massage send", "success");
-                });
-
-            }else {
-                if (!validateEmail($("#email").val())) {
-                    swal("Oops", "your email must be valid ", "error");
-                }else {
-                    swal("Oops", "All field must be full ", "error");
-                }
-
-                console.log("callback")
-            }
-        })
+    $(document).ready(function() {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1683737295124837');
+        fbq('track', 'PageView');
+        fbq('track', 'CompleteRegistration');
 
     });
 
+
+
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1683737295124837');
+    fbq('track', 'PageView');
+    fbq('track', 'CompleteRegistration');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1683737295124837&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- End Facebook Pixel Code -->
+<script>
+    fbq('track', 'CompleteRegistration');
 </script>
 
-</body>
+<script src="assets/js/jquery.paroller.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
+<script src="assets/js/parallox-jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/sweetalert.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151443245-1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog==" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#h-p1").delay(1050).animate({left: "8.5vw"}).removeClass("text-center").addClass("text-left");
+        $("#h-p2").delay(1050).animate({left: "8.5vw"}).removeClass("text-center").addClass("text-left");
+        $("#money").delay(500).animate({right: "0"}).animate({ deg: 3 },{duration: 200, step: function(now) {$(this).css({ transform:'rotate('+now+'deg)'});}});
+        $("#p2").delay(1000).animate({left: "+=48.5vw"});
+        $("#facebook").delay(1300).animate({left: "+=15.5vw"});
+        $("#box2").animate({
+            height: "0",
+        }, 2800);
+        $("#box1").animate({
+            height: "0",
+        }, 2500);
+    });
+</script>
 </html>

@@ -93,14 +93,14 @@ changeScroll();
 // Ajax form submit
 
 
-$('.yes-btn').on('click', function (e) {
+$('.yes-btn').on('click', function () {
 
     var mail = $('#mail-input').val();
     if (mail == '' || mail == null) {
         swal("Oops", "Email can not be empty", "error");
-        return false;
+        return;
     }
-    $('form').submit();
+    $('#subscrib_buttons').submit();
     return;
     var loading = $('.loading');
     var yes_btn = $('.yes-btn img');
@@ -405,7 +405,7 @@ $(window).resize(function () {
 
 $(document).ready(function () {
     $('.submitModal').on('click', function (e) {
-
+        e.preventDefault();
         var mail = $('#mce-EMAIL').val();
         var name = $('#mce-FNAME').val();
         let validate=true
@@ -426,6 +426,124 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+// *********parallax*
+$(document).ready(function () {
+    $("#welcome").css('top', function(){ return $(this).offset().top; }).css("left",'8%')
+        .animate({ top:"29%"}, 300);
+    $("#header-Page1").css('top', function(){ return $(this).offset().top; }).css("left",'8%')
+        .animate({ top:"36%"}, 500);
+    $("#head").animate({left:"2%"}, 300);
+    $("#DivgoButton").css('bottom', function(){ return $(this).offset().bottom; }).delay( 800 ).animate({ bottom:"43%"}, 500);
+    $("#SL1Sub").css('bottom', function(){ return $(this).offset().bottom; }).css("left",'25%')
+        .delay( 800 ).animate({ bottom:"43%"}, 500);
+    $("#DivgoButton2").animate({bottom:"-80%"}, 200);
+
+
+    $("#car").animate({left:"-35%"}, 300);
+    $("#SL2SignUp").animate({top:"-35%"}, 300);
+    $("#SL2Header").animate({top:"-35%"}, 300);
+    $("#SL2Sub").animate({bottom:"-55%"}, 300);
+
+    let i=1
+    function ckickSlider() {
+        if (i%2===0){
+            $("#dot-right").click()
+        }else {
+            $("#dot-left").click()
+        }
+        i=i+1
+
+    }
+
+    setInterval(function(){ ckickSlider() }, 4000);
+
+    // $('#dot-right').click();
+
+
+
+    // $("#SL2").addClass("d-none").animate({left:'110%'},50);
+
+
+    $("#dot-right").attr("src","assets/images/page3/dot-deactive.png")
+
+    $('#dot-left').on('click', function () {
+        $("#dot-left").attr("src","assets/images/page3/dot-active.png")
+        $("#dot-right").attr("src","assets/images/page3/dot-deactive.png")
+
+
+        $("#car") .animate({left:"-35%"}, 200);
+        $("#SL2SignUp") .animate({top:"-35%"}, 200);
+        $("#SL2Header") .animate({top:"-35%"}, 200);
+        $("#SL2Sub") .animate({bottom:"-55%"}, 200);
+        $("#DivgoButton2").animate({bottom:"-80%"}, 200);
+
+        $("#SL1").animate({left:"0"}, 800);
+        $("#SL2").delay(100).animate({left:"60%"}, 900);
+
+
+
+        $("#welcome").css('top', function(){ return $(this).offset().top; }).css("left",'8%')
+            .delay( 800 ).animate({ top:"29%"}, 300);
+        $("#header-Page1").css('top', function(){ return $(this).offset().top; }).css("left",'8%')
+            .delay( 800 ).animate({ top:"36%"}, 500);
+        $("#head").delay( 800 ).animate({left:"2%"}, 300);
+
+         $("#DivgoButton").css('bottom', function(){ return $(this).offset().bottom; }).delay( 800 ).animate({ bottom:"43%"}, 300);
+        $("#SL1Sub").css('bottom', function(){ return $(this).offset().bottom; }).css("left",'25%')
+            .delay( 800 ).animate({ bottom:"43%"}, 500);
+
+
+
+        // setTimeout(function(){  $('#dot-right').click() }, 4000)
+
+
+    });
+    $('#dot-right').on('click', function () {
+        $("#dot-right").attr("src","assets/images/page3/dot-active.png")
+        $("#dot-left").attr("src","assets/images/page3/dot-deactive.png")
+
+
+        $("#SL1").delay(100).animate({left:"-110%"}, 900);
+        $("#SL2").animate({left:"0"}, 800);
+
+        $("#welcome").animate({ top:"-20%"}, 200);
+        $("#header-Page1").animate({ top:"-20%"}, 200);
+        $("#head").animate({left:"-49%"}, 200);
+        $("#DivgoButton").animate({bottom:"-55%"}, 200);
+        $("#SL1Sub") .animate({bottom:"-55%"}, 200);
+
+        $("#SL2SignUp").css('top', function(){ return $(this).offset().top; }).css("left",'49%')
+            .delay( 800 ).animate({ top:"29%"}, 300);
+        $("#SL2Header").css('top', function(){ return $(this).offset().top; }).css("left",'26%')
+            .delay( 800 ).animate({ top:"36%"}, 500);
+        $("#SL2Sub").css('bottom', function(){ return $(this).offset().bottom; }).css("left",'43%')
+            .delay( 800 ).animate({ bottom:"40%"}, 500);
+        $("#car") .delay( 800 ).animate({left:"13%"}, 300);
+        $("#DivgoButton2").css('bottom', function(){ return $(this).offset().bottom; }).delay( 800 ).animate({ bottom:"38%"}, 300);
+
+
+        // setTimeout(function(){  $('#dot-right').click() }, 4000)
+
+
+
+
+    });
+});
+
+
+
+// $(document).ready(function () {
+//     $( ".character-top" ).hover(
+//         function() {
+//             $( this ).css("width","16vw");
+//         }
+//     );
+//
+// });
+
 
 
 

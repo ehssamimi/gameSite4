@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sweetalert.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
+
+    <link rel="icon"
+      type="image/png" 
+      href="fav.jpeg">
+      
+    <title>Ticket To Heaven</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151443245-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151443245-1');
+    </script>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <style>
+        .closeBtnModal{
+            color: white;
+            position: absolute;
+            right: -3%;
+            top: -3%;
+        }
+        .pointer-circle {
+            -moz-border-radius: 50px ;
+            -webkit-border-radius: 50px;
+            border-radius: 50px ;
+            width: 40px;
+            height: 40px;
+            background: white;
+        }
+
+    </style>
+
+
+
+<!--    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/4da4727f638cff6a7ef5a1380/ad69fb4a386e270305a01a7b5.js");</script>-->
+ </head>
+
+
+<body>
+ 
+    
+
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="loading-area">
+        <div class="logo"><img src="assets/images/bar.png" alt=""></div>
+        <span>loading...</span>
+    </div>
+    <div class="left-side"></div>
+    <div class="right-side"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Scroll Helper -->
+
+ <div id="scrollbar-rail" class="  content h-100   ">
+    <div class="scroll-helper">
+        <div class="bar2 d-flex align-items-center justify-content-between ">
+
+            <span class="top">01</span>
+
+            <input type="range"  class="input-range " id="input-range" type="range" step="0.1" value="1"
+                   min="1" max="10"
+
+
+            />
+            <span class="bottom">05</span>
+        </div>
+
+    </div>
+
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-dark custom-bg-light fixed-top"
+    id="navigationTop">
+    <a class="navbar-brand" href="#">
+        <img src="assets/images/bar.png" width="60" height="60" class="d-inline-block align-top" alt="bar.png" id="headerBar">
+        <span class="FS4 Font-Family-font1 vertical-align-bottom">TICKET TO HEAVEN</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav   position-relative">
+            <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link  anchor navlink-Color  active-scroll-header" id="page1Header" onclick="changeBarNumber('01')"
+                   href="#page1">HOME</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse"  data-target="#collapsibleNavbar" >
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('02')" id="page2Header" href="#page2">INTRODUCTION</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('03')" id="page3Header" href="#page3">HEROES</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('04')" id="page4Header" href="#page4">MAPS AND
+                    TRAPS</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color" onclick="changeBarNumber('05')" id="joinus" href="#Jooooin">JOIN
+                    US!</a>
+            </li>
+            <li class="nav-item fs1" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <a data-easing="linear" class="nav-link anchor navlink-Color"   id="contact-us-li" href="contact-us.html">Contact US</a>
+            </li>
+            <img src="assets/images/Rectangle 15.svg" alt="headerLine" id="headerLine" class="headerLine "/>
+
+        </ul>
+    </div>
+        <div class=" socialsHeaders   d-none d-sm-block ">
+            <div class="d-flex w-100 h-100">
+                <div class="d-flex h-100">
+                    <div class="mr-2 ml-2 h-100 d-flex align-items-center" style="width: 58% ">
+
+                        <a href="https://twitter.com/handmadellc" target="_blank" class="t">
+                            <img src="assets/images/page3/Icon%20awesome-twitter.png" alt="tw" style="width: 80% ">
+                        </a>
+
+
+
+
+
+                    </div>
+                    <div class="mr-2 h-100 d-flex align-items-center" style="width: 38% ">
+                        <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank"  >
+                            <img src="assets/images/page3/Icon%20awesome-facebook-f.png" alt="fb" style="width: 80% " >
+                        </a>
+                    </div>
+
+                </div>
+                <div class="h-100  pl-5 pr-5 bg-kickstarter    Font-Family-font1 FS3 d-flex align-items-center text-white  " >
+                    KickStarter
+                </div>
+            </div>
+
+        </div>
+</nav>
+
+
+
+<!-- Page 1 -->
+<section class="container-fluid" id="page1">
+    <div class="row">
+        <div class="col-md-12 p-0" style="">
+            <div class="slider-dot d-flex">
+                <img src="assets/images/page3/dot-active.png" id="dot-left">
+                <img src="assets/images/page3/dot-active.png" id="dot-right" class="ml-2">
+            </div>
+            <div class="w-100">
+
+                <a class="join-us-btn" onclick="changeBarNumber(5,true)" href="#page5" style="z-index: 99!important;"></a>
+                <!--<img src="assets/images/group2.png" class="group2" alt="group2.png">-->
+
+                <!--<input type="range" min="1" max="100" value="50" class="slider" id="myRange" style="z-index: 99999999!important;">-->
+
+
+                <div class="prl group4" data-paroller-factor="-0.2" data-paroller-type="foreground" data-paroller-direction="vertical" style="z-index: 3!important;" >
+                    <img src="assets/images/content_1.png" class="  w-100" alt="content_1.png"/>
+
+                    <div class="w-100 d-flex justify-content-end position-relative mt-3" style="z-index: 99!important;" >
+                        <img src="assets/images/page1-btn.png" class="   " alt="content_1.png"  style="width: 48%"/>
+
+                    </div>
+                    <a class="goButton cursor-pointer text-white cursor-pointer" onclick="changeBarNumber(5,true)" style="z-index: 99!important;" href="#page5">JOIN OUR COMMIUNITYS </a>
+
+                </div>
+
+                <img src="assets/images/page3/head.png" class="group3" alt="head.png"/>
+
+                <img src="assets/images/page1_asset1.jpg" class="w-100" alt="page1.png">
+            </div>
+
+
+        </div>
+    </div>
+</section>
+     <!--<div class="w-100">-->
+         <!--<input type="range" min="0" max="11" value="7" step="1" orient="vertical">-->
+
+     <!--</div>-->
+
+
+     <!-- Page 1 -->
+
+<!-- Page 2 -->
+<section class="container-fluid  overflow-hidden" id="page2">
+    <div class="row">
+        <div class="col-md-12 p-0">
+            <div class="right-pic  ">
+                <div class="prl page2-1" data-paroller-factor=" 0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
+                    <img src="assets/images/page2-1.png" class="  w-100 h-100" alt="content_1.png"/>
+                </div>
+                <div class="prl page2-2" data-paroller-factor="-0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
+                    <img src="assets/images/page2-2.png" class="  w-100 h-100" alt="content_1.png"/>
+                </div>
+                <!--<img src="assets/images/page2-1.png" class="page2-1" alt="2-1.png">-->
+                <!--<img src="assets/images/page2-2.png" class="page2-2" alt="2-2.png">-->
+            </div>
+            <div class="left-text">
+                <h1 class="left-text" >INTRODUCTION</h1>
+                <p>You'll find yourself In New Hope City, led by The
+                    <br>
+                Leader.He brought territories together, made
+                    <br>
+                    peace and started rebuilding.
+                    <br>
+                    He sounds like a saint,don't get too attached as
+                    he
+                    <br>
+                    backstabbed everyone soon after.
+                    <br>
+                    Now all territories are under his ruthless
+                    <br>
+                    command.
+                    <br>
+                    New Hope City is the wealthiest city in the world
+                    <br>
+                    with its superior technology.
+                    <br>
+                    Poor territories can compete in the annual
+                    <br>
+                    tournament run by The Leader.
+                    <br>
+                    And win the life changing prize of a Ticket To
+                    <br>
+                    Heaven.
+                    <br>
+                    This Tournament is a path to a better life, and
+                    <br>
+                    you're going to be one of the competitors to win it.
+                </p>
+            </div>
+            <img src="assets/images/page2_asset1.jpg" class="w-100" alt="page2.png">
+        </div>
+    </div>
+</section>
+<!-- Page 2 -->
+
+<!-- Page middle -->
+<section class="container-fluid  overflow-hidden" id="middle">
+         <div class="row">
+             <div class="col-md-12 p-0">
+                 <div class="left-text">
+                      <h2 class="left-text" >CHOOSE YOUR HERO</h2>
+                      <h3 class="left-text" >DIFFERENT HERO'S DIFFERENT PLAYING STYLES </h3>
+                     <p class="paraghraph">Each hero has different abilities and playing style
+                         <br>
+                         Which creates a new experience for you every match.
+                     </p>
+                 </div>
+                 <div class="container-span">
+                     <span class="s1 pb">attacker</span>
+                     <span class="s2 pb ">supporter</span>
+                     <span class="s3 pb">defender</span>
+                 </div>
+                 <img src="assets/images/heroes_design_super_minimal.png" class="heros"
+                      alt="heroes_design_super_minimal.png">
+
+                 <img src="assets/images/middel.png" class="w-100" alt="middle.png">
+             </div>
+         </div>
+     </section>
+<!-- Page middle -->
+
+
+<!-- Page 3 -->
+<section class="container-fluid" id="page3">
+    <div class="row">
+        <div class="col-md-12 p-0 position-relative d-flex h-100"  >
+            <!--<div class="w-55 d-flex  ">-->
+            <div class="position-relative overflow-hidden  box-line" id="copper">
+                <img src="assets/images/page3/cooper_back_color@2x.png" class="w-100 h-100 bar-bg">
+                <div class="character-inline  ">
+                    <img src="assets/images/page3/cooper@2x.png" alt="copper"   class="character-each"   >
+                </div>
+
+                <div class="line-character" >
+                    COOPER
+                </div>
+
+            </div>
+
+            <div class="position-relative overflow-hidden  box-line " id="daisey">
+                <img src="assets/images/page3/daisey_back_color@2x.png" class="w-100 h-100 bar-bg">
+
+                <div class="character-inline  ">
+                    <img src="assets/images/page3/daisey@2x.png" alt="DAISEY"   class="character-each"   >
+                </div>
+                <div class="line-character" >
+                    DAISEY
+                </div>
+
+            </div>
+            <div class="position-relative overflow-hidden  box-line  " id="rodger">
+                <img src="assets/images/page3/roger_back_color@2x.png" class="w-100 h-100 bar-bg">
+                <div class="character-inline w-100">
+                    <img src="assets/images/page3/roger@2x.png" alt="RODGER" class="character-each"    >
+                </div>
+                <div class="line-character" >
+                    RODGER
+                </div>
+
+            </div>      <div class="position-relative overflow-hidden  box-line  " id="haung">
+                <img src="assets/images/page3/Haung_back_color@2x.png" class="w-100 h-100 bar-bg">
+            <div class="character-inline ">
+                <img src="assets/images/page3/haung@2x.png" alt="HAUNG"  class="character-each"    >
+            </div>
+
+                <div class="line-character" >
+                    HAUNG
+                </div>
+
+            </div>
+
+
+            <div class="  ">
+                <img src="assets/images/lot-more-line-bg.png" class="w-100 h-100">
+                <div class="moreHeros text-center">
+                    AND
+                    <br>A LOT<br> MORE <br> HEROES
+                </div>
+
+            </div>
+             <!--</div>-->
+            <!--<div class="w-45 position-relative">-->
+                <div class="copper position-relative box-ch   ">
+                    <h2 class="name">COOPER</h2>
+
+                    <img src="assets/images/cooper.png" class="character " alt="character">
+                    <img src="assets/images/power-cooper.png" class="power" alt="power">
+                    <img src="assets/images/cooper-bg.png" class="w-100 " alt="group282.png">
+                    <p class="text-center">Represents the people of eastern territories of
+                        <br> united territories of america,
+                        <br> warriors of the black sky city . black sky <br>
+                        city is coal mining city , many<br> citizens of this city compete in the annual
+                        <br>
+                        tournaments.</p>
+                </div>
+            <div class="  position-relative box-ch rodger d-none ">
+                <h2 class="name">RODGER</h2>
+
+                <img src="assets/images/rodger.png" class="character2" alt="character">
+                <img src="assets/images/power-rodger.png" class="power" alt="power">
+                <img src="assets/images/rodger-bg.png" class="w-100 " alt="group282.png">
+                <p class="text-center"> represents the people of south west territories
+                    <br> territories consisting crop farmers
+                    <br> and workers</p>
+            </div>
+            <div class="  position-relative box-ch daisey d-none ">
+                <h2 class="name">DAISEY</h2>
+
+                <img src="assets/images/page3/daisey@2x.png" class="character" alt="character">
+                <img src="assets/images/page3/power_daisey@2x.png" class="power" alt="power">
+                <img src="assets/images/page3/daisey_big_back@2x.png" class="w-100 " alt="group282.png">
+                <p class="text-center"> Represents the people  of old Alaska territory
+                    <br>  the warriors whom had ice as
+                    <br> their weapon <br>
+                  </p>
+            </div>
+            <div class="  position-relative box-ch haung d-none ">
+                <h2 class="name">HAUNG</h2>
+
+                <img src="assets/images/page3/haung@2x.png" class="character" alt="character">
+                <img src="assets/images/page3/power_hsung@2x.png" class="power" alt="power">
+                <img src="assets/images/page3/haung_big_back@2x.png" class="w-100 " alt="group282.png">
+                <p class="text-center"> represents the immigrants of old japan
+                    <br> current residents of eastern
+                    <br> territories</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Page 3 -->
+
+<!-- Page 4 -->
+<section class="container-fluid" >
+    <span id="page4" class="hidden pt-5 mt-5"></span>
+    <div class="row">
+        <div class="col-md-12 p-0">
+            <div class="text-page-4">
+                <p class="p1">Fight in the deserts of the New
+                    <br>
+                    Hope City and Snowy lands of Old
+                    <br>
+                    Utah... As each map has its own
+                    <br>
+                    unique challenges
+                </p>
+                <p class="p2">
+                    Your enemy is not the only one who 
+                    <br>
+                    can kill you!
+                    <br>
+                    Watch for the traps, and use them
+                    <br>
+                    against your opponents.
+
+                </p>
+            </div>
+            <img src="assets/images/page4_asset1.jpg" class="w-100" alt="page4.jpg">
+        </div>
+    </div>
+</section>
+<!-- Page 4 -->
+
+<!-- Page 5 -->
+<section class="container-fluid" id="page5">
+
+    <div class="row">
+        <span id="Jooooin" class="hidden   mt-5"></span>
+        <div class="col-md-12 p-0 text-img">
+
+
+            <div class="text-parent">
+                <h3 class="font1">Ticket To Heaven</h3>
+                <p class="p1">Jump into the battlefield, support your teammates, kill your opponnets
+                    <br>
+                    and Heaven will be your next stop.
+                <br>
+                    What are you waiting for, become a backer and you can get to play with exclusive
+                    content 
+                    <br>
+                    before anyone else.
+                </p>
+                <div class="col-sm-8 col-md-5 p-0">
+                    <form action="https://thehandmade.us19.list-manage.com/subscribe/post" method="POST" target="_blank" novalidate id="subscrib_buttons">
+                        <input type="hidden" name="u" value="4da4727f638cff6a7ef5a1380">
+                        <input type="hidden" name="id" value="b9b9647f42">
+                   
+                    <div class="name-input">
+                        <img src="assets/images/input.png" class="input-pic" alt="">
+                        <input type="text" id="name-input"   class="fs15vw" name="MERGE1" placeholder="ENTER YOUR NAME...">
+                        <input type="hidden" id="name-input2"  class="fs15vw" name="MERGE2" placeholder="enter your Name..." value="family">
+
+                    </div>
+
+                    <div class="mail-input">
+                        <img src="assets/images/input.png" class="input-pic" alt="">
+                        <input type="text" id="mail-input" name="MERGE0"  class="fs2vw" placeholder="ENTER YOUR MAIL...">
+                    </div>
+                   
+                    <div class="col-md-8 col-sm-8 yes-btn">
+                        <img src="assets/images/page1-btn.png" class="path" alt="path323.png">
+                        <p class="yes cursor-pointer">YES, I WANT TO SIGN UP ! </p>
+                        <div class="loading"></div>
+                    </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+            <div class="social">
+                <!--<div class="d-flex flex-column">-->
+                <div class="mb-5vw   w-100">
+                    <p class="fs15vw text-white">you can also follow us on </p>
+                    <!--<img src='assets/images/you%20can%20also%20follow%20us%20on.png' class="w-100" alt="you.png"/>-->
+
+                </div>
+
+
+                    <div class=" w-100 ">
+                        <a href="https://twitter.com/handmadellc" target="_blank" class="t">
+                            <img src='assets/images/twitter.png' class="w-100" alt="twitter.png"/>
+                        </a>
+                        <a href="https://www.linkedin.com/company/handmadeinteractive" target="_blank" class="l">
+                            <img src="assets/images/linkedin.png" class="w-100" alt="linkedin.png"/>
+                        </a>
+                        <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank" class="y">
+                            <img src="assets/images/youtube.png" class="w-100" alt="youtube.png"/>
+
+                        </a>
+                        <a href="https://www.instagram.com/thehandmade.io/" target="_blank" class="i">
+                            <img src="assets/images/instagram.png" class="w-100" alt="instagram.png"/>
+                        </a>
+                        <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank" class="fb-icon">
+                            <img src="assets/images/facebook.png" class="w-100" alt="facebook.png"/>
+                        </a>
+                    </div>
+
+
+                <!--</div>-->
+
+            </div>
+            <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank" class="social-group2">
+                <img src="assets/images/group2.png" class="social-group2" alt="group2.png"/>
+            </a>
+            <img src="assets/images/page5.png" class="w-100" alt="page5.png">
+        </div>
+    </div>
+</section>
+<!-- Page 5 -->
+
+<!-- Footer -->
+<section class="container-fluid " id="footer">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarFooter">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbarFooter">
+            <ul class="navbar-nav  ">
+                <li class="nav-item">
+                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('01')" href="#page1">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('02')"
+                       href="#page2">INTRODUCTION</a>
+                </li>
+                <li class="nav-item">
+                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('03')" href="#page3">CHOOSE YOUR
+                        HEROS</a>
+                </li>
+                <li class="nav-item">
+                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('04')" href="#page4">MAPS AND
+                        TRAPS</a>
+                </li>
+                <li class="nav-item">
+                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('05')" href="#page5">CONTACT
+                        US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <p class="text-center text-white">
+        @2020 HANDMADE INTERACTIVE LLC. ALL RIGHT RESERVED.
+        <br>
+        All trademarks referenced herein the properties of their respective
+        <br>
+        owners.
+        <br>
+        CA Residents only: Do not sell my personal information.
+    </p>
+    <!-- Navbar -->
+</section>
+<!-- Footer -->
+<!--    modal-->
+
+
+     <div class="modal fade" id="myModal"   tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+
+                 <div class="w-100">
+                     <div id="mc_embed_signup">
+<!--                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                             <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>-->
+<!--                         </button>-->
+
+                         <div class="card"  >
+                             <div class="pointer-circle closeBtnModal d-flex justify-content-center align-items-center ">
+                                 <span class="close "   data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+
+                             </div>
+
+                             <img src="assets/images/billboard_2.jpg" class="card-img-top" alt="a">
+                             <form action="https://thehandmade.us19.list-manage.com/subscribe/post?u=4da4727f638cff6a7ef5a1380&amp;id=b9b9647f42"
+                                   method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                   class="validate" target="_blank" novalidate>
+
+<!--                                 <form action="https://thehandmade.us19.list-manage.com/subscribe/post" method="POST">-->
+<!--                                     <input type="hidden" name="u" value="4da4727f638cff6a7ef5a1380">-->
+<!--                                     <input type="hidden" name="id" value="b9b9647f42">-->
+
+
+
+                             <div class="card-body">
+
+                                     <div id="mc_embed_signup_scroll" class="">
+
+                                        <div class="text-center">
+                                            <p class="fs3 pr">Join Our Community!</p>
+                                            <p class="fs1 pr">Fight for Heaven Or stay in Hell</p>
+                                        </div>
+                                         <div class="mc-field-group">
+
+
+                                             <div class="form-group row">
+
+                                                 <label for="mce-EMAIL">Email   <span
+                                                         class="asterisk">*</span></label>
+                                                 <input type="email" value="" name="EMAIL" class="form-control required email w-100"
+                                                        id="mce-EMAIL">
+                                             </div>
+
+
+
+                                         </div>
+                                         <div class="mc-field-group">
+                                             <div class="form-group row">
+                                                 <label for="mce-FNAME">First Name   <span
+                                                         class="asterisk">*</span></label>
+                                                 <input type="text" value="" name="FNAME" id="mce-FNAME" class="form-control required email w-100">
+                                                 <input type="text" value="modal" name="LNAME" class="required w-100 d-none "  >
+                                                 <!--                                                    id="mce-LNAME">-->
+                                             </div>
+
+                                         </div>
+
+                                         <div id="mce-responses" class="clear">
+                                             <div class="response" id="mce-error-response" style="display:none"></div>
+                                             <div class="response" id="mce-success-response" style="display:none"></div>
+                                         </div>
+                                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4da4727f638cff6a7ef5a1380_b9b9647f42" tabindex="-1" value=""></div>
+
+                                      </div>
+
+                             </div>
+                             <div class="modal-footer">
+                                 <div class="clear w-100 text-center"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button form-control text-white col-6 offset-3 bg-dark submitModal" style="cursor: pointer!important"  ></div>
+                             </div>
+                             </form>
+                         </div>
+                     </div>
+                 </div>
+
+             </div>
+         </div>
+     </div>
+
+
+</div>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js" ><\/script>')</script>
+<script>
+
+</script>
+
+<script src="assets/js/jquery.paroller.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
+ <script src="assets/js/parallox-jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/sweetalert.min.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+    $(window).on('load',function(){
+        setTimeout(function(){   $('#myModal').modal('show'); }, 5000);
+
+
+    });
+</script>
+
+
+</body>
+</html>

@@ -6,9 +6,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/sweetalert.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/set1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
 
     <link rel="icon"
@@ -31,20 +33,10 @@
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
     <style>
-        .closeBtnModal{
-            color: white;
-            position: absolute;
-            right: -3%;
-            top: -3%;
-        }
-        .pointer-circle {
-            -moz-border-radius: 50px ;
-            -webkit-border-radius: 50px;
-            border-radius: 50px ;
-            width: 40px;
-            height: 40px;
-            background: white;
-        }
+
+
+
+
 
     </style>
 
@@ -135,122 +127,287 @@
 
         </ul>
     </div>
+        <div class=" socialsHeaders   d-none d-sm-block ">
+            <div class="d-flex w-100 h-100">
+                <div class="d-flex h-100">
+                    <div class="mr-2 ml-2 h-100 d-flex align-items-center" style="width: 58% ">
+
+                        <a href="https://twitter.com/handmadellc" target="_blank" class="t">
+                            <img src="assets/images/page3/Icon%20awesome-twitter.png" alt="tw" style="width: 80% ">
+                        </a>
+
+
+
+
+
+                    </div>
+                    <div class="mr-2 h-100 d-flex align-items-center" style="width: 38% ">
+                        <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank"  >
+                            <img src="assets/images/page3/Icon%20awesome-facebook-f.png" alt="fb" style="width: 80% " >
+                        </a>
+                    </div>
+
+                </div>
+                <div class="h-100  pl-5 pr-5 bg-kickstarter    Font-Family-font1 FS3 d-flex align-items-center text-white  " >
+                    KickStarter
+                </div>
+            </div>
+
+        </div>
 </nav>
 
 
 
 <!-- Page 1 -->
-<section class="container-fluid" id="page1">
+<section class="  h-100 row m-0" id="page1">
     <div class="row">
-        <div class="col-md-12 p-0" style="">
+        <div class="col-md-12 p-0">
+            <div class="slider-dot d-flex">
+                <img src="assets/images/page3/dot-active.png" id="dot-left"  >
+                <img src="assets/images/page3/dot-active.png" id="dot-right" class="ml-2" >
+            </div>
+            <div class="w-100 position-relative d-flex" style="overflow: hidden">
 
 
-            <a class="join-us-btn" onclick="changeBarNumber(5,true)" href="#page5" style="z-index: 99!important;"></a>
-            <!--<img src="assets/images/group2.png" class="group2" alt="group2.png">-->
+<!--                    <a class="join-us-btn" onclick="changeBarNumber(5,true)" href="#page5" style="z-index: 99!important;"></a>-->
+                    <!--<img src="assets/images/group2.png" class="group2" alt="group2.png">-->
 
-            <!--<input type="range" min="1" max="100" value="50" class="slider" id="myRange" style="z-index: 99999999!important;">-->
-
-
-            <div class="prl group4" data-paroller-factor="-0.2" data-paroller-type="foreground" data-paroller-direction="vertical" style="z-index: 3!important;" >
-                <img src="assets/images/content_1.png" class="  w-100" alt="content_1.png"/>
-                <div class="w-100 d-flex justify-content-end position-relative mt-3" style="z-index: 99!important;" >
-                    <img src="assets/images/page1-btn.png" class="   " alt="content_1.png"  style="width: 48%"/>
+                    <!--<input type="range" min="1" max="100" value="50" class="slider" id="myRange" style="z-index: 99999999!important;">-->
 
 
+                    <span class=" position-absolute text-white Font-welcome"  id="welcome"  >WELCOME TO</span>
+                    <span class=" position-absolute text-white Font-Header-Pag1" id="header-Page1"  >THE NEW HOPE CITY</span>
+
+                <span class=" position-absolute text-white Font-SL1-Sub" id="SL1Sub"  >LAND OF LOVE AND FAITH</span>
+
+                    <div class=" w-100 DivgoButton" id="DivgoButton" style="z-index: 3!important;">
+                        <img src="assets/images/page1-btn.png" class="  position-absolute  "  alt="content_1.png" style="left: 0;width: 17%"/>
+                             <a class="goButton " onclick="changeBarNumber(5,true)"
+                               style="z-index: 3!important;" href="#page5">JOIN OUR COMMIUNITYS </a>
+
+                    </div>
+
+
+
+                <img src="assets/images/head.png" class="group3" alt="head.png" id="head"/>
+
+                    <img src="assets/images/page1_asset1.jpg" class="w-100 h-100 position-absolute " style="z-index: 2" alt="page1.png" id="SL1">
+
+
+
+
+
+
+                    <span class=" position-absolute text-white Font-SL2-Sign"  id="SL2SignUp"  >SIGN UP</span>
+                    <span class=" position-absolute text-white Font-SL2-Header" id="SL2Header"  >FOR GRAND TOUR TOURNAMENT</span>
+                    <span class=" position-absolute text-white Font-SL2-Sub" id="SL2Sub"  >FIGHT TO HEAVEN OR STAY IN HELL</span>
+                <div class="w-100 DivgoButton2" id="DivgoButton2" style="z-index: 3!important;">
+                    <img src="assets/images/page1-btn.png" class="  position-absolute  "  alt="content_1.png" style="left: 0;width: 17%"/>
+                    <a class="goButton " onclick="changeBarNumber(5,true)"
+                       style="z-index: 3!important;" href="#page5">JOIN OUR COMMIUNITYS </a>
                 </div>
-                <a class="goButton cursor-pointer text-white cursor-pointer" onclick="changeBarNumber(5,true)" style="z-index: 99!important;" href="#page5">JOIN OUR COMMIUNITYS </a>
+                    <!--                <span class=" position-absolute text-white Font-Header-Pag1" id="header-Page1"  >FOR GRAND TOUR TOURNAMENT</span>-->
+
+
+
+
+                    <img src="assets/images/page3/car.png" class="car" alt="car" id="car"/>
+                    <img src="assets/images/page3/bg-slider-2.png"  class="w-100 h-100 position-absolute    " style="z-index: 1" alt="page1.png" id="SL2">
+                    <img src="assets/images/page3/bg-slider-2.png"  class="w-100 h-100      " style="opacity: 0" alt="page1.png"  >
 
             </div>
 
-            <img src="assets/images/head.png" class="group3" alt="head.png"/>
 
-            <img src="assets/images/page1_asset1.jpg" class="w-100" alt="page1.png">
+
+
+
+
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
      <!--<div class="w-100">-->
          <!--<input type="range" min="0" max="11" value="7" step="1" orient="vertical">-->
 
      <!--</div>-->
+     <section class="  row overflow-hidden m-0" id="page2">
+     <div class="col-12 d-flex align-items-center    box-middle" style="justify-content: space-around;" >
+         <div class="d-flex align-items-end size-box-middle  float-left text-white overflow-hidden  ">
+             <div class="box-middle-l  position-relative  d-flex align-items-end col-12 h-100    d-block">
+                 <div class="  ml-box-middle ">
+                     <p class="m-0 font1 fs-3">WATCH TRAILER</p>
+                     <p class="m-0 font2 fs-2">TRIALER AVAIALBEL SOON…</p>
+                 </div>
+             </div>
+         </div>
+
+
+         <div class="d-flex align-items-end size-box-middle  float-left text-white overflow-hidden  ">
+             <div class="box-middle-r  position-relative  d-flex align-items-end col-12 h-100    d-block">
+                 <div class="  ml-box-middle ">
+                     <p class="m-0 font1 fs-3">WHAT IS TICKET TO HEAVEN</p>
+                     <p class="m-0 font2 fs-2">INTRODUCTION ABOUT TICKET TO HEAVEN</p>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+     </section>
 
 
      <!-- Page 1 -->
 
 <!-- Page 2 -->
-<section class="container-fluid  overflow-hidden" id="page2">
-    <div class="row">
-        <div class="col-md-12 p-0">
-            <div class="right-pic  ">
-                <div class="prl page2-1" data-paroller-factor=" 0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
-                    <img src="assets/images/page2-1.png" class="  w-100 h-100" alt="content_1.png"/>
-                </div>
-                <div class="prl page2-2" data-paroller-factor="-0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
-                    <img src="assets/images/page2-2.png" class="  w-100 h-100" alt="content_1.png"/>
-                </div>
-                <!--<img src="assets/images/page2-1.png" class="page2-1" alt="2-1.png">-->
-                <!--<img src="assets/images/page2-2.png" class="page2-2" alt="2-2.png">-->
-            </div>
-            <div class="left-text">
-                <h1 class="left-text" >INTRODUCTION</h1>
-                <p>You'll find yourself In New Hope City, led by The
-                    <br>
-                Leader.He brought territories together, made
-                    <br>
-                    peace and started rebuilding.
-                    <br>
-                    He sounds like a saint,don't get too attached as
-                    he
-                    <br>
-                    backstabbed everyone soon after.
-                    <br>
-                    Now all territories are under his ruthless
-                    <br>
-                    command.
-                    <br>
-                    New Hope City is the wealthiest city in the world
-                    <br>
-                    with its superior technology.
-                    <br>
-                    Poor territories can compete in the annual
-                    <br>
-                    tournament run by The Leader.
-                    <br>
-                    And win the life changing prize of a Ticket To
-                    <br>
-                    Heaven.
-                    <br>
-                    This Tournament is a path to a better life, and
-                    <br>
-                    you're going to be one of the competitors to win it.
-                </p>
-            </div>
-            <img src="assets/images/page2_asset1.jpg" class="w-100" alt="page2.png">
-        </div>
-    </div>
-</section>
+<!--<section class="  overflow-hidden" id="page2">-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-12 p-0">-->
+<!--            <div class="right-pic  ">-->
+<!--                <div class="prl page2-1" data-paroller-factor=" 0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">-->
+<!--                    <img src="assets/images/page2-1.png" class="  w-100 h-100" alt="content_1.png"/>-->
+<!--                </div>-->
+<!--                <div class="prl page2-2" data-paroller-factor="-0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">-->
+<!--                    <img src="assets/images/page2-2.png" class="  w-100 h-100" alt="content_1.png"/>-->
+<!--                </div>-->
+<!--                &lt;!&ndash;<img src="assets/images/page2-1.png" class="page2-1" alt="2-1.png">&ndash;&gt;-->
+<!--                &lt;!&ndash;<img src="assets/images/page2-2.png" class="page2-2" alt="2-2.png">&ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="left-text">-->
+<!--                <h1 class="left-text" >INTRODUCTION</h1>-->
+<!--                <p>You'll find yourself In New Hope City, led by The-->
+<!--                    <br>-->
+<!--                Leader.He brought territories together, made-->
+<!--                    <br>-->
+<!--                    peace and started rebuilding.-->
+<!--                    <br>-->
+<!--                    He sounds like a saint,don't get too attached as-->
+<!--                    he-->
+<!--                    <br>-->
+<!--                    backstabbed everyone soon after.-->
+<!--                    <br>-->
+<!--                    Now all territories are under his ruthless-->
+<!--                    <br>-->
+<!--                    command.-->
+<!--                    <br>-->
+<!--                    New Hope City is the wealthiest city in the world-->
+<!--                    <br>-->
+<!--                    with its superior technology.-->
+<!--                    <br>-->
+<!--                    Poor territories can compete in the annual-->
+<!--                    <br>-->
+<!--                    tournament run by The Leader.-->
+<!--                    <br>-->
+<!--                    And win the life changing prize of a Ticket To-->
+<!--                    <br>-->
+<!--                    Heaven.-->
+<!--                    <br>-->
+<!--                    This Tournament is a path to a better life, and-->
+<!--                    <br>-->
+<!--                    you're going to be one of the competitors to win it.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <img src="assets/images/page2_asset1.jpg" class="w-100" alt="page2.png">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!-- Page 2 -->
 
 <!-- Page middle -->
-<section class="container-fluid  overflow-hidden" id="middle">
-         <div class="row">
+<section class="   overflow-hidden row  m-0" id="middle">
+         <div class="row m-0">
              <div class="col-md-12 p-0">
                  <div class="left-text">
                       <h2 class="left-text" >CHOOSE YOUR HERO</h2>
                       <h3 class="left-text" >DIFFERENT HERO'S DIFFERENT PLAYING STYLES </h3>
-                     <p class="paraghraph">Each hero has different abilities and playing style
+                     <p class="paraghraph">Each hero has different abilities and playing
                          <br>
-                         Which creates a new experience for you every match.
+                         style Which creates a new experience for you
+                         <br>
+                         every match.
                      </p>
                  </div>
-                 <div class="container-span">
-                     <span class="s1 pb">attacker</span>
-                     <span class="s2 pb ">supporter</span>
-                     <span class="s3 pb">defender</span>
-                 </div>
-                 <img src="assets/images/heroes_design_super_minimal.png" class="heros"
-                      alt="heroes_design_super_minimal.png">
+                 <div class=" d-flex position-absolute h-100" style="right: 0" >
+                     <div class="main-charcter-top">
 
-                 <img src="assets/images/middel.png" class="w-100" alt="middle.png">
+                         <div class="character-top  " id="warrior">
+
+                             <div class="line-Text" style="top:8.2vw;left:-60% ">
+                                 ATTACKER
+                             </div>
+                             <div class="icon position-relative">
+                                 <img src="assets/images/page3/attack-warrior.png" alt="attacker"   class="imag-character  "   >
+                             </div>
+
+
+                         </div>
+                         <div class="character-top overflow-hidden" id="supporter" >
+                             <div class="line-Text"  style="top:8.7vw;left:-65% ">
+                                 SUPPORTER
+                             </div>
+                             <div class="icon position-relative">
+                                 <img src="assets/images/page3/support-warrior-1.png" alt="supporter"   class="imag-character-support   "   >
+                             </div>
+
+                         </div>
+                         <div class="character-top overflow-hidden" id="deffender" >
+                             <div class="line-Text"  style="top:7.2vw;left:-53% ">
+                                 DEFENDER
+                             </div>
+                             <div class="icon position-relative">
+                                 <img src="assets/images/page3/deffend-warrior.png" alt="deffender"   class="imag-character  "   >
+                             </div>
+
+                         </div>
+
+
+                     </div>
+
+<!--                     <div class="position-relative overflow-hidden  bg-TypeCarecter  w-22  " id="daisey">-->
+<!--                <img src="assets/images/page3/daisey_back_color@2x.png" class="w-100 h-100 bar-bg" style="opacity: 0"> -->
+<!--&lt;!&ndash;                         <span  class="w-100" style="opacity: 0">x</span>&ndash;&gt;-->
+<!--                         <div class="character-inline  ">-->
+<!--                             <img src="assets/images/page3/daisey@2x.png" alt="DAISEY"   class="character-each"   >-->
+<!--                         </div>-->
+<!--                         <div class="line-character" >-->
+<!--                             DAISEY-->
+<!--                         </div>-->
+
+<!--                     </div>-->
+                 </div>
+
+<!--                 <div>-->
+<!--                     <div >-->
+<!--                         <div class="position-relative overflow-hidden     w-34   ">-->
+
+<!--                             <img src="assets/images/page3/attack-warrior.png" class=" w-100  " alt="attack.png">-->
+<!--                         </div>-->
+
+<!--                         <div class="position-relative overflow-hidden   w-34   ">-->
+<!--                             <img src="assets/images/page3/support-warrior-1.png" class=" w-100   " alt="support.png">-->
+<!--                         </div>-->
+<!--                         <div class="position-relative overflow-hidden   w-34    ">-->
+<!--                             <img src="assets/images/page3/deffend-warrior.png" class=" w-100   " alt="deffend.png">-->
+<!--                         </div>-->
+
+<!--                     </div>-->
+
+<!--                  </div>-->
+
+
+
+
+
+                 <img src="assets/images/page3/middel-3.png" class="w-100" alt="middle.png">
              </div>
          </div>
      </section>
@@ -258,8 +415,8 @@
 
 
 <!-- Page 3 -->
-<section class="container-fluid" id="page3">
-    <div class="row">
+<section class="row m-0  " id="page3">
+    <div class="row m-0">
         <div class="col-md-12 p-0 position-relative d-flex h-100"  >
             <!--<div class="w-55 d-flex  ">-->
             <div class="position-relative overflow-hidden  box-line" id="copper">
@@ -294,7 +451,8 @@
                     RODGER
                 </div>
 
-            </div>      <div class="position-relative overflow-hidden  box-line  " id="haung">
+            </div>
+            <div class="position-relative overflow-hidden  box-line  " id="haung">
                 <img src="assets/images/page3/Haung_back_color@2x.png" class="w-100 h-100 bar-bg">
             <div class="character-inline ">
                 <img src="assets/images/page3/haung@2x.png" alt="HAUNG"  class="character-each"    >
@@ -368,47 +526,116 @@
 <!-- Page 3 -->
 
 <!-- Page 4 -->
-<section class="container-fluid" >
-    <span id="page4" class="hidden pt-5 mt-5"></span>
-    <div class="row">
-        <div class="col-md-12 p-0">
-            <div class="text-page-4">
-                <p class="p1">Fight in the deserts of the New
-                    <br>
-                    Hope City and Snowy lands of Old
-                    <br>
-                    Utah... As each map has its own
-                    <br>
-                    unique challenges
-                </p>
-                <p class="p2">
-                    Your enemy is not the only one who 
-                    <br>
-                    can kill you!
-                    <br>
-                    Watch for the traps, and use them
-                    <br>
-                    against your opponents.
+<!--<section class="  " >-->
+<!--    <span id="page4" class="hidden pt-5 mt-5"></span>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-12 p-0">-->
+<!--            <div class="text-page-4">-->
+<!--                <p class="p1">Fight in the deserts of the New-->
+<!--                    <br>-->
+<!--                    Hope City and Snowy lands of Old-->
+<!--                    <br>-->
+<!--                    Utah... As each map has its own-->
+<!--                    <br>-->
+<!--                    unique challenges-->
+<!--                </p>-->
+<!--                <p class="p2">-->
+<!--                    Your enemy is not the only one who-->
+<!--                    <br>-->
+<!--                    can kill you!-->
+<!--                    <br>-->
+<!--                    Watch for the traps, and use them-->
+<!--                    <br>-->
+<!--                    against your opponents.-->
 
-                </p>
-            </div>
-            <img src="assets/images/page4_asset1.jpg" class="w-100" alt="page4.jpg">
-        </div>
-    </div>
-</section>
+<!--                </p>-->
+<!--            </div>-->
+<!--            <img src="assets/images/page4_asset1.jpg" class="w-100" alt="page4.jpg">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+     <section class="row  m-0 ">
+
+         <!--     *************************************************************************** <Am>  **************************************************************************-->
+
+
+         <div class="w-100 h-Ready">
+             <div class="col-12 text-white text-center fs-ready font1">
+                 <p class="m-0">NOW YOU ARE READY!</p>
+             </div>
+             <div class="col-12 d-flex align-items-start  h-100" style="justify-content: space-around;">
+
+
+                 <div class="grid">
+                     <figure class="effect-lily">
+                         <img src="assets/images/box-ready-r.png" alt="img12"/>
+                         <figcaption>
+                             <div>
+                                 <p style="font-size: 1.3vw">
+                                     Fight in the deserts of the New Hope
+                                     <br>
+                                     City and Snowy of Old Utah ... AS
+                                     <br>
+                                     each map has its own unique
+                                     <br>
+                                     challenges
+                                 </p>
+                             </div>
+
+
+<!--                             <a href="#">View more</a>-->
+                         </figcaption>
+                     </figure>
+                     <figure class="effect-lily fig2"  >
+                         <img src="assets/images/box-ready-l.png" alt="img1"/>
+                         <figcaption>
+                             <div>
+                                 <p style="font-size: 1.3vw">
+                                     Your enemy is not the only one who can
+                                     <br>
+                                     kill you!
+                                     <br>
+                                     Watch for the traps, and use them
+                                     <br>
+                                     against your opponents
+                                 </p>
+<!--                                 <div class="FS1">-->
+<!--                              -->
+<!--                                 </div>-->
+                             </div>
+<!--                             <a href="#">View more</a>-->
+                         </figcaption>
+                     </figure>
+                 </div>
+
+                 <div class="width-pack   top-pack   position-absolute z-index-3 ">
+                     <div >
+                         <img src="assets/images/pack.png" class="h-100  " style="width: 60%" alt="pack">
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+         <!--     *************************************************************************** </Am>  **************************************************************************-->
+
+     </section>
+
+
 <!-- Page 4 -->
 
 <!-- Page 5 -->
-<section class="container-fluid" id="page5">
+<section class="row   m-0 " id="page5">
 
-    <div class="row">
+    <div class="row m-0">
         <span id="Jooooin" class="hidden   mt-5"></span>
         <div class="col-md-12 p-0 text-img">
 
 
             <div class="text-parent">
-                <h3 class="font1">Ticket To Heaven</h3>
-                <p class="p1">Jump into the battlefield, support your teammates, kill your opponnets
+                <h3 class="font1 text-left">Ticket To Heaven</h3>
+                <p class="p1 text-left">Jump into the battlefield, support your teammates, kill your opponnets
                     <br>
                     and Heaven will be your next stop.
                 <br>
@@ -418,19 +645,24 @@
                     before anyone else.
                 </p>
                 <div class="col-sm-8 col-md-5 p-0">
-                    <form action="https://thehandmade.us19.list-manage.com/subscribe/post" method="POST">
+                    <form action="https://thehandmade.us19.list-manage.com/subscribe/post" method="POST" target="_blank" novalidate id="subscrib_buttons">
                         <input type="hidden" name="u" value="4da4727f638cff6a7ef5a1380">
                         <input type="hidden" name="id" value="b9b9647f42">
                    
                     <div class="name-input">
-                        <img src="assets/images/input.png" class="input-pic" alt="">
+                        <div class="d-flex">
+                            <img src="assets/images/input.png" class="input-pic" alt="">
+                        </div>
+
                         <input type="text" id="name-input"   class="fs15vw" name="MERGE1" placeholder="ENTER YOUR NAME...">
                         <input type="hidden" id="name-input2"  class="fs15vw" name="MERGE2" placeholder="enter your Name..." value="family">
 
                     </div>
 
                     <div class="mail-input">
+                        <div class="d-flex">
                         <img src="assets/images/input.png" class="input-pic" alt="">
+                        </div>
                         <input type="text" id="mail-input" name="MERGE0"  class="fs2vw" placeholder="ENTER YOUR MAIL...">
                     </div>
                    
@@ -488,54 +720,133 @@
 <!-- Page 5 -->
 
 <!-- Footer -->
-<section class="container-fluid p-0" id="footer">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark">
+<!--<section class=" p-0 row m-0" id="footer">-->
+<!--    &lt;!&ndash; Navbar &ndash;&gt;-->
+<!--    <nav class="navbar navbar-expand-md navbar-dark">-->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarFooter">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbarFooter">
-            <ul class="navbar-nav  ">
-                <li class="nav-item">
-                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('01')" href="#page1">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('02')"
-                       href="#page2">INTRODUCTION</a>
-                </li>
-                <li class="nav-item">
-                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('03')" href="#page3">CHOOSE YOUR
-                        HEROS</a>
-                </li>
-                <li class="nav-item">
-                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('04')" href="#page4">MAPS AND
-                        TRAPS</a>
-                </li>
-                <li class="nav-item">
-                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('05')" href="#page5">CONTACT
-                        US</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarFooter">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="collapsibleNavbarFooter">-->
+<!--            <ul class="navbar-nav  ">-->
+<!--                <li class="nav-item">-->
+<!--                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('01')" href="#page1">HOME</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('02')"-->
+<!--                       href="#page2">INTRODUCTION</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('03')" href="#page3">CHOOSE YOUR-->
+<!--                        HEROS</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('04')" href="#page4">MAPS AND-->
+<!--                        TRAPS</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a data-easing="linear" class="nav-link" onclick="changeBarNumber('05')" href="#page5">CONTACT-->
+<!--                        US</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
 
-    <p class="text-center text-white">
-        @2020 HANDMADE INTERACTIVE LLC. ALL RIGHT RESERVED.
-        <br>
-        All trademarks referenced herein the properties of their respective
-        <br>
-        owners.
-        <br>
-        CA Residents only: Do not sell my personal information.
-    </p>
-    <!-- Navbar -->
-</section>
+<!--    <p class="text-center text-white">-->
+<!--        @2020 HANDMADE INTERACTIVE LLC. ALL RIGHT RESERVED.-->
+<!--        <br>-->
+<!--        All trademarks referenced herein the properties of their respective-->
+<!--        <br>-->
+<!--        owners.-->
+<!--        <br>-->
+<!--        CA Residents only: Do not sell my personal information.-->
+<!--    </p>-->
+<!--    &lt;!&ndash; Navbar &ndash;&gt;-->
+<!--</section>-->
+     <section class="container-fluid   c-footer  " id="footer">
+         <!-- Navbar -->
+         <div class="col-12 mt-2">
+             <div class="col-6 fs-social float-left">
+                 <a href="https://www.facebook.com/TicketToHeavenGame/" target="_blank" class="y">
+                     <i class="fab fa-facebook-square c-facebook"></i>
+                 </a>
+
+                 <a href="https://twitter.com/handmadellc" target="_blank" class="w-100 ">
+                     <i class="fab fa-twitter c-twitter"> </i>
+                 </a>
+
+                 <a href="https://www.linkedin.com/company/handmadeinteractive" target="_blank" class="l">
+                     <i class="fab fa-linkedin c-linkedin "></i>
+                 </a>
+
+                 <a href="https://www.instagram.com/thehandmade.io/" target="_blank" class="i">
+                     <i class="fab fa-instagram c-instagram"></i>
+                 </a>
+                 <a href="https://www.instagram.com/thehandmade.io/" target="_blank" class="i">
+                     <i class="fab fa-youtube c-youtube"></i>
+                 </a>
+
+             </div>
+             <div class="col-6 float-left text-right">
+                 <a data-easing="linear" href="#page1"><i class="far fa-arrow-alt-circle-up c-Top fs-Top "></i></a>
+             </div>
+         </div>
+
+
+         <div class="footer">
+
+             <nav class="col-12 navbar navbar-expand-md navbar-dark mt-footer1">
+
+                 <!--        <div class="navbar-collapse" id="collapsibleNavbarFooter">-->
+                 <div class=" " id="collapsibleNavbarFooter">
+                     <ul class="navbar-nav">
+                         <li class=" border-footer ">
+                             <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('01')" href="#page1">HOME</a>
+                         </li>
+                         <li class=" border-footer">
+                             <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('02')" href="#page2">INTRODUCTION</a>
+                         </li>
+                         <li class=" border-footer">
+                             <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('03')" href="#page3">CHOOSE YOUR HEROS</a>
+                         </li>
+                         <li class=" border-footer">
+                             <a data-easing="linear" class="  fs-footer-nav pi" onclick="changeBarNumber('04')" href="#page4">MAPS AND TRAPS</a>
+                         </li>
+                         <li class=" ">
+                             <a data-easing="linear" class=" link fs-footer-nav pi" onclick="changeBarNumber('05')" href="#page5">CONTACT US</a>
+                         </li>
+                     </ul>
+
+                 </div>
+             </nav>
+             <div class="col-12 mt-footer2">
+                 <hr  style="background-color: #434343" />
+             </div>
+             <div class="col-12 mt-footer3 ">
+
+                 <p class="m-0 fs-footer-detail">©2020 HANDMADE INTERACTIVE LLC. ALL RIGHTS RESERVED.</p>
+                 <P class="m-0 fs-footer-detail">All trademarks referenced herein are the properties of their respective owners.</P>
+                 <P class="m-0 fs-footer-detail">CA Residents only: Do not sell my personal information</P>
+
+             </div>
+             <div class="col-12 mt-2">
+                 <div class="col-6 fs-social float-left mt-footer4 p-0">
+                     <p class="col-6 m-0 fs-footer-detail float-left p-0">Terms of Service</p>
+
+                     <p class="col-6 m-0 fs-footer-detail float-left p-0">Privacy Policy</p>
+                 </div>
+                 <div class="col-6 float-left text-right ">
+                     <img src="assets/images/Pcgame.png" class="size-pcgame" alt="">
+                 </div>
+             </div>
+         </div>
+         <!-- Navbar -->
+     </section>
 <!-- Footer -->
 <!--    modal-->
 
 
-     <div class="modal fade" id="myModal"   tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal fade" id="myModal"    tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog">
              <div class="modal-content">
 
@@ -551,7 +862,7 @@
 
                              </div>
 
-                             <img src="assets/images/page5.jpg" class="card-img-top" alt="a">
+                             <img src="assets/images/billboard_2.jpg" class="card-img-top" alt="a">
                              <form action="https://thehandmade.us19.list-manage.com/subscribe/post?u=4da4727f638cff6a7ef5a1380&amp;id=b9b9647f42"
                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                                    class="validate" target="_blank" novalidate>
@@ -620,11 +931,50 @@
 </div>
 <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js" ><\/script>')</script>
 <script>
+    $(document).ready(function() {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1683737295124837');
+        fbq('track', 'PageView');
+        fbq('track', 'CompleteRegistration');
+
+    });
+
+
+
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1683737295124837');
+    fbq('track', 'PageView');
+    fbq('track', 'CompleteRegistration');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1683737295124837&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- End Facebook Pixel Code -->
+<script>
+    fbq('track', 'CompleteRegistration');
+</script>
+<script>
 
 </script>
 
 <script src="assets/js/jquery.paroller.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src="assets/js/parallox-jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
@@ -636,7 +986,9 @@
 
 <script type="text/javascript">
     $(window).on('load',function(){
-        $('#myModal').modal('show');
+        setTimeout(function(){   $('#myModal').modal('show'); }, 5000);
+
+
     });
 </script>
 
